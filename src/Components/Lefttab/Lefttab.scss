@@ -1,0 +1,48 @@
+.leftTabContainer{
+    margin: 12px 20px;
+    background-color: #29261c;
+    border-radius: 22px;
+    min-height: calc(100vh - 60px);
+    flex: 1;
+    max-width: 220px;
+    box-shadow: 10px 9px 0px 0px rgba(44,31,19,0.75);
+    -webkit-box-shadow: 10px 9px 0px 0px rgba(44,31,19,0.75);
+    -moz-box-shadow: 10px 9px 0px 0px rgba(44,31,19,0.75);
+}
+.countriesList{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    .country{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #0e0e0e;
+        padding: 8px 20px;
+        padding-bottom: 10px;
+        cursor: pointer;
+        .left{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 20px;
+            
+           .countryFlag{
+               img{
+                   display: flex;
+                   width: 30px;
+                   height: 25px;
+                   object-fit: contain;
+                   margin-right: 10px;
+               }
+           } 
+          
+        }
+        .right{
+            display: flex;
+            margin: 0px 20px;
+        }
+    }
+}

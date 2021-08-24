@@ -1,0 +1,17 @@
+.searchConatiner{
+    margin: 20px;
+    display: flex;
+    width: 100vw;
+    background-color: #29261c;
+    border-radius: 22px;
+    height: 150px;
+    box-shadow: 1px 8px 0px 0px rgba(44,31,19,0.75);
+    -webkit-box-shadow: 1px 8px 0px 0px rgba(44,31,19,0.75);
+    -moz-box-shadow: 1px 8px 0px 0px rgba(44,31,19,0.75);
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px 40px;
+    }
+}

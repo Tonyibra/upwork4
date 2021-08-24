@@ -1,0 +1,118 @@
+.card{
+    position: relative;
+    height: 480px;
+    width: 300px;
+    margin: 10px 20px;
+    display: flex;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    &:hover{
+        .cardPrice{
+            visibility: visible !important;
+        }
+        .cardImage{
+            img{
+                filter: opacity(0.2) drop-shadow(0 0 0 #29261c);
+            }
+        }
+        .girlName{
+            display: none;
+        }
+        .girlLoc{
+            display: none;
+        }
+        .cardContent{
+            bottom: 120px;
+        }
+    }
+    .cardImage{
+        
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50px;
+        }
+    }
+    .cardContent{
+        transition: all 300ms ease-in-out;
+        position: absolute;
+        bottom: 50px;
+        left: 20px;
+        .personalInfo{
+            display: flex;
+            flex-direction: column;
+        .girlName{
+            span{
+                font-family: DM Sans;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 40px;
+                letter-spacing: -0.022em;
+                text-align: center;
+                color: #ffffff;
+            }
+        }
+        .girlLoc{
+            span{
+                font-family: DM Sans;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px;
+                letter-spacing: -0.022em;
+                text-align: center;
+                color: #ffffff; 
+            }
+        }
+       
+    }
+    .cardPrice{
+        visibility: hidden;
+        .height{
+            span{
+                font-family: DM Sans;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 40px;
+                letter-spacing: -0.022em;
+                text-align: center;
+                color: #ffffff;
+                border-bottom: 3px solid orangered;
+
+            }   
+            .age{
+                font-size: 20px;
+                margin-left: 8px;
+                border-bottom: 0px;
+            }
+        }
+        .about{
+            p{
+                color: #ffffff;
+                line-height: 40px;
+                font-size: 30px;
+            }
+        }
+    }
+    
+    }
+    .cardBadges{
+        position: absolute;
+        right: -15px;
+        .vip{
+            background-color: orange;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            strong{
+                color: white;
+            }
+        }
+    }
+}
